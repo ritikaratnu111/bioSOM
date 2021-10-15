@@ -1,0 +1,6 @@
+To run the files, got the directory with the installations of drivers and run the commands below:
+
+$ g++ -I/usr/local/cuda-9.0/targets/x86_64-linux/include -c common.c main.c
+$ g++ -I/usr/local/cuda-9.0/targets/x86_64-linux/include common.o main.o -L /usr/local/cuda-9.0/lib64 -lOpenCL -lm -o som.elf
+$ ./som.elf
+
